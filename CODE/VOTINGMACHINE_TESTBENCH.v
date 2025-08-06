@@ -27,6 +27,8 @@ module test;
   end
 
   initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
     reset = 1; mode = 0; button1 = 0; button2 = 0; button3 = 0; button4 = 0;
     #100;
 
